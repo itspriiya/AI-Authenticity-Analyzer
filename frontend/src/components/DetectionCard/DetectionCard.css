@@ -1,0 +1,87 @@
+.detection-card {
+  appearance: none;
+  width: 272px;
+  height: 134px;
+  background-color: var(--color-navbar-pink);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+  padding: 0 48px;
+
+  text-align: center;
+
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.detection-card:hover {
+  filter: brightness(0.92);
+  transform: translateY(-2px);
+}
+
+.detection-card:active {
+  filter: brightness(0.85);
+  transform: translateY(0);
+}
+
+.detection-card-title {
+  margin: 0;
+
+  font-family: var(--font-display-single);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+
+  color: var(--color-card-text);
+}
+
+.detection-card-description {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--color-card-text);
+}
+
+@media (max-width: 768px) {
+  .detection-card {
+    width: 220px;
+    height: 110px;
+    padding: 0 24px;
+  }
+
+  .detection-card-title {
+    font-size: 22px;
+  }
+
+  .detection-card-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detection-card {
+    width: 150px;
+    height: 100px;
+    padding: 0 16px;
+    gap: 6px;
+  }
+
+  .detection-card-title {
+    font-size: 18px;
+  }
+
+  .detection-card-description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
