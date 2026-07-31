@@ -2,29 +2,30 @@
 
 An AI-powered web application that analyzes text and images to estimate whether they are AI-generated or human-created.
 
+**Live Demo:** https://ai-authenticity-analyzer-1.onrender.com
+
 ## Features
 
 - AI text detection using a fine-tuned BERT model
 - AI image detection using an SDXL detection model
 - Detection history with filtering (All, Text, Image)
 - Confidence score visualization
-- Responsive user interface
 
 ## Tech Stack
 
-**Frontend**
+### Frontend
 - React
 - Vite
 - CSS
 
-**Backend**
+### Backend
 - FastAPI
 - SQLite
 - SQLAlchemy
 
-**AI Models**
-- Text: gouwsxander/slop-detector-bert
-- Image: Organika/sdxl-detector
+### AI Models
+- Text: `gouwsxander/slop-detector-bert`
+- Image: `Organika/sdxl-detector`
 
 ## Installation
 
